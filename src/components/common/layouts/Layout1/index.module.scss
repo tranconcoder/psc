@@ -1,0 +1,11 @@
+.layout-1 {
+	@include size(100vw, false);
+	@include minSize(false, 100vh);
+
+	.content {
+		@include size(var(--layout-width), false);
+		@include maxSize(100vw, false);
+		margin-inline: auto;
+		padding-block: 2.4rem;
+	}
+}

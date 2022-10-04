@@ -1,0 +1,23 @@
+.redirect-button {
+	.redirect-button-list {
+		@include flex(row, center, space-between);
+		flex-wrap: wrap;
+		list-style-type: none;
+		gap: 1rem 0px;
+
+		> li {
+			&.question-and-answer {
+				> button,
+				> a {
+					@include size(34rem, 3.6rem);
+				}
+			}
+
+			> button,
+			> a {
+				@include size(17rem, 3.6rem);
+				@include flexCenter();
+			}
+		}
+	}
+}
